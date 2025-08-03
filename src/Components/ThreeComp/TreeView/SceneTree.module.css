@@ -1,0 +1,61 @@
+.treeContainer {
+  padding: 0.5rem;
+  max-height: 5vh;
+  min-height: 39vh;
+  margin: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  border: 1px solid;
+  background-color: transparent;
+
+}
+
+.treeWrapper {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.assetWrapper {
+  margin-bottom: 0.25rem;
+}
+
+.asset {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  user-select: none;
+}
+
+.asset:hover {
+  /* background-color: transparent; */
+}
+
+.toggleIcon {
+  margin-right: 6px;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.assetName {
+  font-size: 0.9rem;
+}
+
+.children {
+  margin-left: 1rem;
+}
+
+.selected {
+  background-color: #d0eaff;
+  color: black;
+}
